@@ -71,7 +71,7 @@
                 $scope.composeEmail.to = $scope.composeEmail.from;
 
                 // it’s coming from us
-                $scope.composeEmail.from = "me";
+                $scope.composeEmail.from = "Dex";
 
                 // show the compose email popup
                 $scope.isComposePopupVisible = true;
@@ -79,7 +79,7 @@
 
             $scope.sendEmail = function () {
                 $scope.isComposePopupVisible = false;
-                $scope.composeEmail.from = "me";
+                $scope.composeEmail.from = "Dex";
                 $scope.composeEmail.date = new Date();
                 $scope.sentEmails.splice(0, 0, $scope.composeEmail);
             };
